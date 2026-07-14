@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubashir Ahmad | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1e293b;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #38bdf8;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 {
+            color: #38bdf8;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        h2 {
+            color: #38bdf8;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+        }
+        .skill-card {
+            background-color: #1e293b;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            font-weight: bold;
+            color: #e2e8f0;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+        .project-card h3 {
+            color: #e2e8f0;
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        .tech-tags span {
+            background-color: #0f172a;
+            color: #38bdf8;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            border: 1px solid #334155;
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0ea5e9;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mubashir Ahmad</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I am Mubashir Ahmad, a passionate Web Developer focused on building clean, responsive, and user-friendly web applications. I love transforming complex ideas into functional and interactive digital solutions using modern coding standards. Always eager to learn new frontend frameworks and optimize user experiences.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">React</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-Commerce Dashboard</h3>
+                    <p>A responsive admin panel built to manage products, sales tracking, and user analytics with an interactive user interface.</p>
+                    <div class="tech-tags">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Interactive Task Manager</h3>
+                    <p>A web application allowing users to create, categorize, update, and delete tasks dynamically with saved system preferences.</p>
+                    <div class="tech-tags">
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Dynamic Weather Web App</h3>
+                    <p>A weather application delivering current, accurate atmospheric updates using responsive API data management interfaces.</p>
+                    <div class="tech-tags">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>API Integration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p style="text-align: center; margin-bottom: 20px;">Let's collaborate on your next project! Reach out to me via the platforms below:</p>
+            <div class="contact-links">
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" class="btn">Email Me</a>
+                <a href="https://www.facebook.com/ " target="_blank" class="btn" style="background-color: #1877f2; color: white;">Facebook</a>
+                <a href="https://github.com/" target="_blank" class="btn" style="background-color: #24292e; color: white;">GitHub</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mubashir Ahmad. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
